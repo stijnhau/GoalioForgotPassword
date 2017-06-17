@@ -18,7 +18,7 @@ use GoalioForgotPassword\Mapper\Password as PasswordMapper;
 use Zend\Crypt\Password\Bcrypt;
 use Zend\Form\Form;
 
-use ZfcBase\EventManager\EventProvider;
+use GoalioForgotPassword\EventManager\EventProvider;
 
 class Password extends EventProvider implements ServiceManagerAwareInterface
 {

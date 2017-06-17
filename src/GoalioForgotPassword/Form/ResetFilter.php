@@ -2,7 +2,7 @@
 
 namespace GoalioForgotPassword\Form;
 
-use ZfcBase\InputFilter\ProvidesEventsInputFilter as InputFilter;
+use GoalioForgotPassword\InputFilter\ProvidesEventsInputFilter as InputFilter;
 use GoalioForgotPassword\Options\ForgotOptionsInterface;
 
 class ResetFilter extends InputFilter
