@@ -1,4 +1,9 @@
 <?php
+namespace GoalioForgotPassword;
+
+use Zend\Router\Http\Segment;
+use Zend\Router\Http\Literal;
+
 return array(
     'view_manager' => array(
         'template_path_stack' => array(
@@ -28,7 +33,7 @@ return array(
             'zfcuser' => array(
                 'child_routes' => array(
                     'forgotpassword' => array(
-                        'type' => 'Literal',
+                        'type' => Literal::class,
                         'options' => array(
                             'route' => '/forgot-password',
                             'defaults' => array(
@@ -38,7 +43,7 @@ return array(
                         ),
                     ),
                     'resetpassword' => array(
-                        'type' => 'Segment',
+                        'type' => Segment::class,
                         'options' => array(
                             'route' => '/reset-password/:userId/:token',
                             'defaults' => array(
